@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Image from "next/image";
 import wizard from "../Images/wordWiz.png";
 import nyu from "../Images/Nyu.png";
@@ -8,6 +9,12 @@ import OpenInNewOutlinedIcon from "@mui/icons-material/OpenInNewOutlined";
 import Link from "next/link";
 
 const Projects = () => {
+  const [showFullDescription, setShowFullDescription] = useState(false);
+
+  const toggleDescription = () => {
+    setShowFullDescription(!showFullDescription);
+  };
+
   const projects = [
     {
       title: "NYU Student Rental",
@@ -95,9 +102,30 @@ const Projects = () => {
 
                   <p className="text-green-500 mb-3">{project.project}</p>
 
-                  <p className="text-white mb-6 text-justify">
-                    {project.description}
-                  </p>
+                  <div>
+                    <p
+                      className={`text-white mb-6 ${
+                        // showFullDescription
+                        //   ? "text-normal :"
+                        "text-normal sm:text-justify"
+                      }`}
+                    >
+                      {/* {showFullDescription
+                        ?  */}
+                      {project.description}
+                      {/* // : `${project.description.slice(0, 100)}...`} */}
+                    </p>
+                    {/* {!showFullDescription && (
+                      <div className="sm:hidden">
+                        <button
+                          onClick={toggleDescription}
+                          className="text-green-500 hover:text-green-600 transition duration-300 ease-in-out"
+                        >
+                          View more
+                        </button>
+                      </div>
+                    )} */}
+                  </div>
                   <div className="flex flex-wrap gap-2 mb-4">
                     {" "}
                     {project.technologies.map((tech, index) => (
