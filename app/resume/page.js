@@ -4,7 +4,7 @@ const Resume = () => {
   return (
     <div className="h-screen">
       <iframe
-        src="/CV_PramodhUgargol_Mar2024.pdf"
+        src="/CV_PramodhUgargol_APR-2024.pdf"
         width="100%"
         height="100%"
       ></iframe>

@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import wizard from "../Images/wordWiz.png";
 import nyu from "../Images/Nyu.png";
+import plano from "../Images/Plan-O.png";
 import lawnber from "../Images/lawnber.png";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import OpenInNewOutlinedIcon from "@mui/icons-material/OpenInNewOutlined";
@@ -16,6 +17,25 @@ const Projects = () => {
   };
 
   const projects = [
+    {
+      title: "Plan-O",
+      description:
+        "Plan-O, is a day-to-day todo application designed to help users organize and manage their daily tasks efficiently. Users can sign in to their accounts to access their personalized todo lists, add new tasks, edit existing ones. Additionally, new users can easily register for an account to start using the app.",
+      technologies: [
+        "Next.js",
+        "Redux",
+        "Express.js",
+        "Node.js",
+        "FirebaseDB",
+        "TailwindCSS",
+        "Vercel",
+      ],
+      githubLink: "https://github.com/PRAMOMDHUGARGOL/redux-todo-client",
+      liveDemoLink: "https://redux-todo-client.vercel.app/",
+      imageLink: plano,
+      github: true,
+      project: "Hobby",
+    },
     {
       title: "NYU Student Rental",
       description:
@@ -31,7 +51,7 @@ const Projects = () => {
       githubLink: "",
       liveDemoLink: "https://nyustudentrent.com",
       imageLink: nyu,
-      gitHub: false,
+      github: false,
       project: "Featured",
     },
     {

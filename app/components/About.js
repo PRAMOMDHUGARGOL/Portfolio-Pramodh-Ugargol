@@ -57,7 +57,9 @@ const About = () => {
                     <h2 className="text-lg md:text-xl font-semibold mb-2 text-green-500">
                       Libraries/Frameworks:
                     </h2>
-                    <p className="text-md">ReactJS, NodeJS, NextJS</p>
+                    <p className="text-md">
+                      ReactJS, NodeJS, NextJS, Redux, ExpressJS
+                    </p>
                   </div>
                 </div>
               </li>
@@ -88,8 +90,7 @@ const About = () => {
                       Other:
                     </h2>
                     <p className="text-md">
-                      Git, Visual Studio Code, Clean Code, Agile (Scrum), and V
-                      Model Development
+                      Git, VS Code, Clean Code, Agile (Scrum), Figma, Moz, Ahref
                     </p>
                   </div>
                 </div>
